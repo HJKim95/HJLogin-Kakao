@@ -38,10 +38,10 @@
 		10C7D8E8248735CE00A7DA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10C7D8EB248735CE00A7DA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10C7D8ED248735CE00A7DA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		10C7D8F824873F2E00A7DA67 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 		10C7D8F92487427A00A7DA67 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		10C7D90F248A085D00A7DA67 /* KakaoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakaoModel.swift; sourceTree = "<group>"; };
 		10C7D910248A085D00A7DA67 /* Kakao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kakao.swift; sourceTree = "<group>"; };
+		10C7D913248A0CCF00A7DA67 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		10C7D8DE248735CC00A7DA67 /* kakaoLogin */ = {
 			isa = PBXGroup;
 			children = (
-				10C7D8F824873F2E00A7DA67 /* KakaoOpenSDK-Bridging-Header.h */,
+				10C7D913248A0CCF00A7DA67 /* KakaoOpenSDK-Bridging-Header.h */,
 				10C7D8DF248735CC00A7DA67 /* AppDelegate.swift */,
 				10C7D8E3248735CC00A7DA67 /* ExampleLoginController.swift */,
 				10C7D90F248A085D00A7DA67 /* KakaoModel.swift */,
