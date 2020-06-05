@@ -10,7 +10,7 @@ ExampleLoginController를 통해 설정 예시를 확인해볼 수 있습니다.
 ## Installation
 
 Kakao.swift, KakaoModel.swift 두 파일을 복사하셔서 해당 프로젝트에 붙여넣으시면 됩니다.  
-#(이때 copy items if needed에 꼭 체크해주세요.)
+(이때 copy items if needed에 꼭 체크해주세요.)
 
 getUserInfo( ) 를 통해 KakaoModel를 parameter로 받아와 사용할 수 있습니다.
 ```ruby
