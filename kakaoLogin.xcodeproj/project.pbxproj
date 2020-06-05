@@ -8,22 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		10C7D8E0248735CC00A7DA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D8DF248735CC00A7DA67 /* AppDelegate.swift */; };
-		10C7D8E2248735CC00A7DA67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D8E1248735CC00A7DA67 /* SceneDelegate.swift */; };
-		10C7D8E4248735CC00A7DA67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D8E3248735CC00A7DA67 /* ViewController.swift */; };
+		10C7D8E4248735CC00A7DA67 /* ExampleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D8E3248735CC00A7DA67 /* ExampleLoginController.swift */; };
 		10C7D8E7248735CC00A7DA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C7D8E5248735CC00A7DA67 /* Main.storyboard */; };
 		10C7D8E9248735CE00A7DA67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10C7D8E8248735CE00A7DA67 /* Assets.xcassets */; };
 		10C7D8EC248735CE00A7DA67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C7D8EA248735CE00A7DA67 /* LaunchScreen.storyboard */; };
+		10C7D8FA2487427A00A7DA67 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10C7D8F92487427A00A7DA67 /* KakaoOpenSDK.framework */; };
+		10C7D911248A085D00A7DA67 /* KakaoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D90F248A085D00A7DA67 /* KakaoModel.swift */; };
+		10C7D912248A085D00A7DA67 /* Kakao.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D910248A085D00A7DA67 /* Kakao.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10C7D8F724873D8500A7DA67 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		10C7D8DC248735CC00A7DA67 /* kakaoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kakaoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C7D8DF248735CC00A7DA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		10C7D8E1248735CC00A7DA67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		10C7D8E3248735CC00A7DA67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		10C7D8E3248735CC00A7DA67 /* ExampleLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleLoginController.swift; sourceTree = "<group>"; };
 		10C7D8E6248735CC00A7DA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		10C7D8E8248735CE00A7DA67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		10C7D8EB248735CE00A7DA67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10C7D8ED248735CE00A7DA67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10C7D8F824873F2E00A7DA67 /* KakaoOpenSDK-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KakaoOpenSDK-Bridging-Header.h"; sourceTree = "<group>"; };
+		10C7D8F92487427A00A7DA67 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		10C7D90F248A085D00A7DA67 /* KakaoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KakaoModel.swift; sourceTree = "<group>"; };
+		10C7D910248A085D00A7DA67 /* Kakao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kakao.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C7D8FA2487427A00A7DA67 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +61,7 @@
 			children = (
 				10C7D8DE248735CC00A7DA67 /* kakaoLogin */,
 				10C7D8DD248735CC00A7DA67 /* Products */,
+				10C7D8F324873D8500A7DA67 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +76,25 @@
 		10C7D8DE248735CC00A7DA67 /* kakaoLogin */ = {
 			isa = PBXGroup;
 			children = (
+				10C7D8F824873F2E00A7DA67 /* KakaoOpenSDK-Bridging-Header.h */,
 				10C7D8DF248735CC00A7DA67 /* AppDelegate.swift */,
-				10C7D8E1248735CC00A7DA67 /* SceneDelegate.swift */,
-				10C7D8E3248735CC00A7DA67 /* ViewController.swift */,
+				10C7D8E3248735CC00A7DA67 /* ExampleLoginController.swift */,
+				10C7D90F248A085D00A7DA67 /* KakaoModel.swift */,
+				10C7D910248A085D00A7DA67 /* Kakao.swift */,
 				10C7D8E5248735CC00A7DA67 /* Main.storyboard */,
 				10C7D8E8248735CE00A7DA67 /* Assets.xcassets */,
 				10C7D8EA248735CE00A7DA67 /* LaunchScreen.storyboard */,
 				10C7D8ED248735CE00A7DA67 /* Info.plist */,
 			);
 			path = kakaoLogin;
+			sourceTree = "<group>";
+		};
+		10C7D8F324873D8500A7DA67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10C7D8F92487427A00A7DA67 /* KakaoOpenSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,6 +107,7 @@
 				10C7D8D8248735CC00A7DA67 /* Sources */,
 				10C7D8D9248735CC00A7DA67 /* Frameworks */,
 				10C7D8DA248735CC00A7DA67 /* Resources */,
+				10C7D8F724873D8500A7DA67 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,9 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10C7D8E4248735CC00A7DA67 /* ViewController.swift in Sources */,
+				10C7D8E4248735CC00A7DA67 /* ExampleLoginController.swift in Sources */,
+				10C7D912248A085D00A7DA67 /* Kakao.swift in Sources */,
+				10C7D911248A085D00A7DA67 /* KakaoModel.swift in Sources */,
 				10C7D8E0248735CC00A7DA67 /* AppDelegate.swift in Sources */,
-				10C7D8E2248735CC00A7DA67 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,13 +318,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2JL6BMG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = kakaoLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = HJKim.kakaoLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./kakaoLogin/KakaoOpenSDK-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,13 +343,20 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D2JL6BMG3;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = kakaoLogin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = HJKim.kakaoLogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "./kakaoLogin/KakaoOpenSDK-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
