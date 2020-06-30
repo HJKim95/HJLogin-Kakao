@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10B621E924A5EA2C00C24E25 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B621E824A5EA2C00C24E25 /* Extension.swift */; };
+		10B6220D24A5EF5600C24E25 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10B6220C24A5EF5600C24E25 /* SceneDelegate.swift */; };
 		10C7D8E0248735CC00A7DA67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D8DF248735CC00A7DA67 /* AppDelegate.swift */; };
 		10C7D8E4248735CC00A7DA67 /* ExampleLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10C7D8E3248735CC00A7DA67 /* ExampleLoginController.swift */; };
 		10C7D8E7248735CC00A7DA67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10C7D8E5248735CC00A7DA67 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		10B621E824A5EA2C00C24E25 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		10B6220C24A5EF5600C24E25 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		10C7D8DC248735CC00A7DA67 /* kakaoLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = kakaoLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10C7D8DF248735CC00A7DA67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10C7D8E3248735CC00A7DA67 /* ExampleLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleLoginController.swift; sourceTree = "<group>"; };
@@ -78,7 +82,9 @@
 			children = (
 				10C7D913248A0CCF00A7DA67 /* KakaoOpenSDK-Bridging-Header.h */,
 				10C7D8DF248735CC00A7DA67 /* AppDelegate.swift */,
+				10B6220C24A5EF5600C24E25 /* SceneDelegate.swift */,
 				10C7D8E3248735CC00A7DA67 /* ExampleLoginController.swift */,
+				10B621E824A5EA2C00C24E25 /* Extension.swift */,
 				10C7D90F248A085D00A7DA67 /* KakaoModel.swift */,
 				10C7D910248A085D00A7DA67 /* Kakao.swift */,
 				10C7D8E5248735CC00A7DA67 /* Main.storyboard */,
@@ -169,10 +175,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10B621E924A5EA2C00C24E25 /* Extension.swift in Sources */,
 				10C7D8E4248735CC00A7DA67 /* ExampleLoginController.swift in Sources */,
 				10C7D912248A085D00A7DA67 /* Kakao.swift in Sources */,
 				10C7D911248A085D00A7DA67 /* KakaoModel.swift in Sources */,
 				10C7D8E0248735CC00A7DA67 /* AppDelegate.swift in Sources */,
+				10B6220D24A5EF5600C24E25 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,41 +14,45 @@ class ViewController: UIViewController {
         let iv = UIImageView()
         iv.backgroundColor = .red
         iv.isUserInteractionEnabled = true
-        iv.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(ss)))
+        iv.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(loginKakao)))
         return iv
     }()
     
     let loginButton: KOLoginButton = {
         let button = KOLoginButton()
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(ss), for: .touchUpInside)
+        button.addTarget(self, action: #selector(loginKakao), for: .touchUpInside)
         return button
     }()
     
     var imageViewConstraint: NSLayoutConstraint?
+    var loginButtonConstraint: NSLayoutConstraint?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         self.navigationController?.isNavigationBarHidden = true
-        loginButton.frame = CGRect(x: 0, y: 300, width: view.frame.width, height: 50)
-        imageView.frame = CGRect(x: 0, y: 400, width: view.frame.width, height: 50)
+
         view.addSubview(loginButton)
         view.addSubview(imageView)
         
+        loginButtonConstraint = loginButton.anchor(view.topAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 200, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 50).first
+        imageViewConstraint = imageView.anchor(loginButton.bottomAnchor, left: view.leftAnchor, bottom: nil, right: view.rightAnchor, topConstant: 100, leftConstant: 0, bottomConstant: 0, rightConstant: 0, widthConstant: 0, heightConstant: 50).first
+        
     }
     
-    @objc func ss() {
+    @objc func loginKakao() {
         let user = Kakao()
+        user.age_range = true
+        user.birthday = true
+        user.birthyear = true
+        user.gender = true
+        user.phone_number = true
         user.getUserInfo { (kakao) in
-            
+            print("--------------------------------")
             print(kakao.age_range)
-//            print(kakao.birthday)
-//            print(k.email)
-//            print(k.gender)
-//            print(k.id)
-//            print(k.profile_image_url)
-//            print(k.nickname)
+            print(kakao.birthday)
+            print(kakao.email)
         }
     }
     
