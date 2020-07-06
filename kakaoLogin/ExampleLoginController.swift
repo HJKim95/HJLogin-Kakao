@@ -48,7 +48,7 @@ class ViewController: UIViewController {
         user.birthyear = true
         user.gender = true
         user.phone_number = true
-        user.getUserInfo { (kakao) in
+        user.getUserInfo { [weak self] (kakao) in
             print("--------------------------------")
             print(kakao.age_range)
             print(kakao.birthday)

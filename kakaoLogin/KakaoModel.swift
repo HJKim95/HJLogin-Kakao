@@ -34,5 +34,4 @@ class KakaoModel: NSObject {
     var is_email_valid:String?
     var is_email_verified:String?
     
-    
 }

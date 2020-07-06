@@ -15,7 +15,7 @@ Kakao.swift, KakaoModel.swift 두 파일을 복사하셔서 해당 프로젝트�
 getUserInfo( ) 를 통해 KakaoModel를 parameter로 받아와 사용할 수 있습니다.
 ```ruby
 let user = Kakao()
-user.getUserInfo { (kakao) in
+user.getUserInfo { [weak self] (kakao) in
     print(kakao.age_range)
 //            print(kakao.birthday)
 //            print(kakao.email)
